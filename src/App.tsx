@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react'
-import styled, { createGlobalStyle, css } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
+import Top from './components/TopContainer'
+import Main from './components/MainContainer'
 
 export default () => (
   <Fragment>
@@ -8,13 +10,13 @@ export default () => (
   </Fragment>
 )
 
-interface IState {
+interface IAppState {
   inputText: string,
   isConvertAvailable: boolean;
 }
 
-class App extends React.Component<{}, IState> {
-  state: IState = {
+class App extends React.Component<{}, IAppState> {
+  state: IAppState = {
     inputText: '',
     isConvertAvailable: false,
   }
@@ -22,18 +24,10 @@ class App extends React.Component<{}, IState> {
   render() {
     return (
       <Container>
-        <InputContainer>
-          <Title>Random Noonsong</Title>
-        </InputContainer>
+        <Top />
+        <Main />
       </Container>
     )
-  }
-
-  onTextInput = (event: any) => {
-    this.setState({
-      inputText: event.target.value,
-      isConvertAvailable: true,
-    })
   }
 }
 
@@ -42,11 +36,17 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   }
+
   html {
+    display: block;
     font-size: 30px;
     user-select: none;
-  }
-  html, #app, body {
+    max-width: 39rem;
+    padding: 2.625rem 1.21875rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
     height: 100%;
   }
 `
@@ -54,16 +54,5 @@ const GlobalStyle = createGlobalStyle`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: .5rem;
   height: 100%;
-`
-
-const Title = styled.div`
-  display: flex;
-  justify-content: center;
-  flex: 1;
-`
-
-const InputContainer = styled.div`
-  height: 1rem;
 `
