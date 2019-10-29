@@ -781,12 +781,24 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
+"@types/dom-to-image@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@types/dom-to-image/-/dom-to-image-2.6.0.tgz#35ffe960c0dcb71e307626f8a03e99cdb76a184d"
+  integrity sha512-X7qEh5AI1s/fb/Ijb1WU/tl7nZjD/A3b0PZiq3QjD31EZkgPooPdpte9MCJWQgqjxA0F8AJFuPd53YDrFJFE7w==
+  dependencies:
+    "@types/node" "*"
+
 "@types/emoji-mart@^2.11.0":
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/@types/emoji-mart/-/emoji-mart-2.11.0.tgz#eb09c71ab592747a25fecb093e2f350c3d5761a1"
   integrity sha512-g1ke5UF5Vuk67kmicHAytYUyhynRQhwF1T8uRSqzcgBFJzmABxkCEBBikRKmHwZlc3qYthSFblk50976MxqHfA==
   dependencies:
     "@types/react" "*"
+
+"@types/node@*":
+  version "12.11.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.11.7.tgz#57682a9771a3f7b09c2497f28129a0462966524a"
+  integrity sha512-JNbGaHFCLwgHn/iCckiGSOZ1XYHsKFwREtzPwSGCVld1SGhOlmZw2D4ZI94HQCrBHbADzW9m4LER/8olJTRGHA==
 
 "@types/prop-types@*":
   version "15.7.3"
@@ -1983,6 +1995,11 @@ dom-serializer@0:
   dependencies:
     domelementtype "^2.0.1"
     entities "^2.0.0"
+
+dom-to-image@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/dom-to-image/-/dom-to-image-2.6.0.tgz#8a503608088c87b1c22f9034ae032e1898955867"
+  integrity sha1-ilA2CAiMh7HCL5A0rgMuGJiVWGc=
 
 domain-browser@^1.1.1:
   version "1.2.0"
