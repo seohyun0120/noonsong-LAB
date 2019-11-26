@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import domtoimage from 'dom-to-image'
 import Picture from './PictureContainer'
-import { EmojiData } from 'emoji-mart';
+import { EmojiData } from 'emoji-mart'
 
 interface IResultProps {
   personalNickName: string
@@ -22,7 +22,7 @@ export default class ButtonBox extends React.Component<IResultProps> {
         {this.props.isPersonalReady ?
           <ResultContainer>
             <Description>
-              '{this.props.personalNickName}' 눈송이만의 색상은
+              '{this.props.personalNickName}'
               <Label
                 personalColor={this.props.personalColor}
               >
@@ -51,16 +51,18 @@ export default class ButtonBox extends React.Component<IResultProps> {
   }
 
   downloadImage = (idName: string) => {
-    const scale = 2
+    const element = document.getElementById(idName) as HTMLInputElement
+    const scale = 1500 / element.offsetWidth
+    console.log(scale, element.offsetWidth)
     domtoimage
-      .toPng(document.getElementById(idName), {
-        height: 320 * scale,
-        width: 320 * scale,
+      .toPng(element, {
+        height: element.offsetHeight * scale,
+        width: element.offsetWidth * scale,
         style: {
-          transform: "scale(" + scale + ")",
-          transformOrigin: "top left",
-          width: 320 + "px",
-          height: 320 + "px"
+          transform: 'scale(' + scale + ')',
+          transformOrigin: 'top left',
+          width: element.offsetWidth + 'px',
+          height: element.offsetHeight + 'px'
         }
       })
       .then((dataUrl: string) => {
@@ -69,14 +71,6 @@ export default class ButtonBox extends React.Component<IResultProps> {
         link.href = dataUrl
         link.click()
       })
-
-    // domtoimage.toPng(document.getElementById(idName))
-    //   .then((dataUrl: string) => {
-    //     const link = document.createElement('a')
-    //     link.download = 'myNoonSong.png'
-    //     link.href = dataUrl
-    //     link.click()
-    //   })
   }
 }
 
@@ -96,10 +90,7 @@ interface IColorProps {
 }
 
 const PictureContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 `
 
 const DownloadButton = styled.button`
@@ -117,5 +108,6 @@ const DownloadButton = styled.button`
 
 const Label = styled.div<IColorProps>`
   margin-left: .15rem;
-  color: ${(props) => props.personalColor}
+  color: ${(props) => props.personalColor};
 `
+

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import myImg from '../assets/default_noonsong.png'
+import myImg from '../assets/noonsong.png'
 import { EmojiData, Emoji } from 'emoji-mart';
 
 interface IPictureProps {
@@ -22,11 +22,14 @@ export default class PictureBox extends React.Component<IPictureProps> {
         return <Blank />
       } else {
         return (
-          <Picture
-            src={myImg}
+          <OuterPicture
             personalColor={this.props.personalColor}
-            title='my_random_noonsong'
-          />
+          >
+            <Picture
+              src={myImg}
+              title='my_random_noonsong'
+            />
+          </OuterPicture>
         )
       }
     })
@@ -50,7 +53,7 @@ export default class PictureBox extends React.Component<IPictureProps> {
     })
 
     return (
-      <PictureContainer>
+      <PictureContainer id='pictureContainer'>
         <NoonsongContainer>
           {noonsongImg}
         </NoonsongContainer>
@@ -85,6 +88,7 @@ interface IColorProps {
 }
 
 const PictureContainer = styled.div`
+  background: #FFF;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -92,6 +96,7 @@ const PictureContainer = styled.div`
 `
 
 const NoonsongContainer = styled.div`
+  background-color: #FFF;
   display: flex;
   flex-direction: row;
   display: flex;
@@ -100,27 +105,30 @@ const NoonsongContainer = styled.div`
 `
 
 const EmojiContainer = styled.div`
-  background-color: #FFF;
   flex-direction: row;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 `
 
 const Blank = styled.div`
-  width: 40px;
-  height: 40px;
-  background-color: #FFF;
+  width: 42px;
+  height: 42px;
 `
 
 const EmojiBox = styled.div`
-  width: 40px;
-  height: 40px;
-  justify-content: center;
+  width: 42px;
+  height: 42px;
 `
 
-const Picture = styled.img<IColorProps>`
-  width: 40px;
-  height: 40px;
-  background-color: ${(props) => props.personalColor}
+const Picture = styled.img`
+  width: 100%;
+  transform: scale(1.02);
+`
+
+const OuterPicture = styled.div<IColorProps>`
+  background: ${(props) => props.personalColor};
+  width: 42px;
+  height: 42px;
 `

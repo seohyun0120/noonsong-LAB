@@ -18,7 +18,9 @@ export default class Bottom extends React.Component {
 
 const BottomBox = styled.div`
   display: flex;
-  padding-top: .25rem;
+  flex-direction: row;
+  height: 2px;
+  margin-top: auto;
 `
 
 const Description = styled.div`

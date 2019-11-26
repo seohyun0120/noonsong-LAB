@@ -2,7 +2,7 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 import { stringToColor } from '../utils'
 import Result from './ResultContainer'
-import { Emoji, EmojiData } from 'emoji-mart';
+import { Emoji, EmojiData } from 'emoji-mart'
 import 'emoji-mart/css/emoji-mart.css'
 
 interface IMainState {
@@ -43,7 +43,7 @@ const customizedEmojiData = [
   {
     id: 'dog',
     colons: ':dog:',
-  }
+  },
   {
     id: 'mushroom',
     colons: ':mushroom:',
