@@ -3,6 +3,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 import Top from './components/TopContainer'
 import Main from './components/MainContainer'
 import Bottom from './components/BottomContainer'
+import Practice from './components/Practice'
 
 export default () => (
   <Fragment>
