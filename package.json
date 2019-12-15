@@ -10,20 +10,26 @@
     "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html"
   },
-  "dependencies": {
-    "@types/dom-to-image": "^2.6.0",
-    "dom-to-image": "^2.6.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "styled-components": "^4.4.0"
-  },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/react-fontawesome": "^0.1.8",
+    "@types/dom-to-image": "^2.6.0",
     "@types/emoji-mart": "^2.11.0",
     "@types/react": "^16.9.3",
     "@types/react-dom": "^16.9.1",
+    "@types/react-sidebar": "^3.0.0",
     "@types/styled-components": "^4.1.19",
+    "@types/react-router-dom": "^5.1.3",
+    "dom-to-image": "^2.6.0",
     "emoji-mart": "^2.11.1",
     "parcel-bundler": "^1.12.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.1.2",
+    "react-sidebar": "^3.0.2",
+    "styled-components": "^4.4.0",
     "ts-loader": "^6.1.2",
     "typescript": "^3.6.3"
   }
