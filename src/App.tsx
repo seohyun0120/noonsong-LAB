@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
-import { ThemeProvider } from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from './global'
 import { theme } from './theme'
 import { useOnClickOutside } from './hook'
@@ -26,6 +26,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyles />
+        <TopContainer />
         <Route exact path='/' component={RandomNoonsong} />
         <Route exact path='/about' component={About} />
         <div ref={node}>
@@ -36,3 +37,9 @@ function App() {
     </ThemeProvider>
   )
 }
+
+const TopContainer = styled.div`
+  background: ${({ theme }) => theme.primaryBlack};
+  top: 0%;
+  height: 3rem;
+`
