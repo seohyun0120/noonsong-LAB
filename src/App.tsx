@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import styled, { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from './global'
 import { theme } from './theme'
@@ -9,6 +9,7 @@ import About from './components/About'
 import Burger from './components/Burger'
 import Menu from './components/Menu'
 import LandingPage from './components/LandingPage'
+import ErrorPage from './components/ErrorPage'
 
 export default () => (
   <BrowserRouter>
@@ -28,9 +29,12 @@ function App() {
       <>
         <GlobalStyles />
         <TopContainer />
-        <Route exact path='/' component={LandingPage} />
-        <Route exact path='/random-noonsong' component={RandomNoonsong} />
-        <Route exact path='/about' component={About} />
+        <Switch>
+          <Route exact path='/' component={LandingPage} />
+          <Route exact path='/random-noonsong' component={RandomNoonsong} />
+          <Route exact path='/about' component={About} />
+          <Route path='*' component={ErrorPage} />
+        </Switch>
         <div ref={node}>
           <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
           <Menu open={open} setOpen={setOpen} id={menuId} />
