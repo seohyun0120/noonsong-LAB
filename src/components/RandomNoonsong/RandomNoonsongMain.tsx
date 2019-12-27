@@ -144,7 +144,7 @@ const ConvertButton = styled.button<IColorProps>`
   height: 2.5rem;
   outline: none;
   ${(props) => props.isConvertAvailable && css`
-    background-color: ${({ theme }) => theme.primaryOrange};
+    background-color: ${({ theme }) => theme.nsLabGold};
   `}
 
   @media (max-width: ${({ theme }) => theme.mobile}) {

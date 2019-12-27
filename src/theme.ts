@@ -7,6 +7,8 @@ export const theme = {
   primaryBlue: '#74c0fc',
   primaryGreen: '#40c057',
   primaryGray: '#343a40',
+  nsLabGold: '#D8B17E',
+  nsLabBlue: '#1F3263',
   mobile: '576px'
 }
 
