@@ -8,23 +8,13 @@ export default function About() {
         <Title>
           눈송 L A B 🤖
         </Title>
-        <Description>made by <span>@scorpion</span></Description>
+        <Description>made by <span>@seohyun0120</span></Description>
         <Description>
-          눈송 LAB(Noonsong LAB)은 숙명여자대학교 마스코트인 <span>눈송이</span>를 활용하여 만들어진 Web Application입니다. <br />
+          <span>눈송 LAB(Noonsong LAB)</span>은 숙명여자대학교 마스코트인 <span>눈송이</span>를 활용하여 만들어진 Web Application입니다. <br />
           심심한 숙대생이 남는 시간을 활용하여 직접 만들어보았습니다. <br />
           앞으로 계속 추가될 다양한 <span>눈송이</span>테마들을 기대해주세요!
         </Description>
       </TextContainer>
-      <ReleaseInfoContainer>
-        <SubTitle>
-          Release Note 🔨
-        </SubTitle>
-        <SubDescription>
-          <h2>v1.0</h2>
-          <h3>December 27, 2019</h3>
-          <h4> 🎉 랜덤눈송이(RandomNoonsong) 출시</h4>
-        </SubDescription>
-      </ReleaseInfoContainer>
       <HelpContainer>
         <HelpTitle>
           사람을 찾아요 👀
@@ -32,32 +22,43 @@ export default function About() {
         <HelpDescription>
           <h2>개발하세요?</h2>
           <h3>
-            <span>NoonsongLAB</span>에 관한 <span>PR & Issue</span>는 언제든지 환영입니다!
+            <span>눈송LAB</span>에 관한 <span>PR & Issue</span>는 언제든지 환영입니다!
             <a href='https://github.com/seohyun0120/random-noonsong'>
               Github
             </a>
-            으로 오세요! 같이 만들어보아요 :)
+            으로 오세요. 같이 만들어봐요!
           </h3>
           <h2>눈송이 짤을 그려보신 적 있으신가요?</h2>
           <h3>
             눈송템 공구를 해보셨던 총대 학우분들, 눈송이 짤을 그려주시는 숨겨진 학우분들을 찾습니다! <br />
             <span> sarah5734@sm.ac.kr </span>으로 이메일 보내주세요. <br />
-            눈송랩실에 다양한 눈송이들이 들어오는 것을 보고싶어요!
+            눈송LAB에 다양한 눈송이들이 들어오는 것을 보고싶어요!
           </h3>
         </HelpDescription>
       </HelpContainer>
+      <ReleaseInfoContainer>
+        <SubTitle>
+          Release Note 🔨
+        </SubTitle>
+        <SubDescription>
+          <h2>v1.0</h2>
+          <h3>December 28, 2019</h3>
+          <h4> 🎉 랜덤눈송이(RandomNoonsong) 출시</h4>
+        </SubDescription>
+      </ReleaseInfoContainer>
     </Container>
   )
 }
 
 const Container = styled.div`
   text-align: center;
+  overflow-y: scroll;
 `
 
 const TextContainer = styled.div`
   display: inline-block;
   max-width: 1020px;
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 2rem 2rem;
   text-align: left;
   width: 100%;
 `
@@ -66,6 +67,7 @@ const Title = styled.div`
   display: inline;
   font-size: 3.125rem;
   font-weight: 700;
+  font-family: '리디바탕';
 
   @media (max-width: 900px) {
     font-size: 24px;
@@ -74,7 +76,7 @@ const Title = styled.div`
 
 const Description = styled.div`
   font-size: 1.225rem;
-  font-weight: 500;
+  font-weight: 400;
   margin: 1rem 0 0 0;
   line-height: 1.5;
 
