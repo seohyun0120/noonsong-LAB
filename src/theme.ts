@@ -4,8 +4,9 @@ export const theme = {
   nsLabWhite: '#FFFFFF',
   nsLabBlack: '#000000',
   nsLabGray: '#757575',
-  nsLabGold: '#D8B17E',
-  nsLabBlue: '#1F3263',
+  nsLabGold: '#84754e',
+  nsLabBlue: '#003087',
+  nsLabSkyBlue: '#0072ce',
   mobile: '576px'
 }
 

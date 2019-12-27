@@ -81,7 +81,7 @@ const Description = styled.div`
   line-height: 1.5;
 
   span {
-    color: ${({ theme }) => theme.nsLabGold};
+    color: ${({ theme }) => theme.nsLabSkyBlue};
     font-weight: 700;
   }
 
@@ -178,11 +178,11 @@ const HelpDescription = styled.div`
   a {
     margin: 0 .2rem;
     text-decoration: none;
-    color: ${({ theme }) => theme.nsLabBlue};
+    color: ${({ theme }) => theme.nsLabSkyBlue};
   }
 
   span {
-    color: ${({ theme }) => theme.nsLabBlue};
+    color: ${({ theme }) => theme.nsLabSkyBlue};
     font-weight: 600;
   }
 

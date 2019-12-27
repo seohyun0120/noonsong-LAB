@@ -12,7 +12,7 @@ export default function LandingPage() {
       <LogoContainer>
         <NSContainer>
           <OuterLogo
-            personalColor={theme.nsLabGold}
+            personalColor={theme.nsLabBlue}
           >
             <Logo
               src={nsLabLogo}
@@ -20,7 +20,7 @@ export default function LandingPage() {
             />
           </OuterLogo>
           <OuterLogo
-            personalColor={theme.nsLabBlue}
+            personalColor={theme.nsLabSkyBlue}
           >
             <Logo
               src={nsLabLogo}
