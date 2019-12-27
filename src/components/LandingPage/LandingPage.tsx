@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import nsLabLogo from '../../assets/noonsong.png'
+import { Link } from 'react-router-dom'
 import { theme } from '../../theme'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
@@ -36,23 +37,27 @@ export default function LandingPage() {
           <Description>
             <span>랜덤 눈송이 만들기</span>
           </Description>
-          <ToButton
-            personalColor={theme.nsLabBlue}
-          >
-            <FontAwesomeIcon icon={faArrowRight} style={{ marginRight: '1rem' }} />
-            GO
+          <Link to='/random-noonsong'>
+            <ToButton
+              personalColor={theme.nsLabBlue}
+            >
+              <FontAwesomeIcon icon={faArrowRight} style={{ marginRight: '1rem' }} />
+              GO
           </ToButton>
+          </Link>
         </LinkListContainer>
         <LinkListContainer>
           <Description>
             <span>About 눈송 L A B</span>
           </Description>
-          <ToButton
-            personalColor={theme.nsLabBlue}
-          >
-            <FontAwesomeIcon icon={faArrowRight} style={{ marginRight: '1rem' }} />
-            GO
+          <Link to='/about'>
+            <ToButton
+              personalColor={theme.nsLabBlue}
+            >
+              <FontAwesomeIcon icon={faArrowRight} style={{ marginRight: '1rem' }} />
+              GO
           </ToButton>
+          </Link>
         </LinkListContainer>
       </LinkContainer>
     </Container>
