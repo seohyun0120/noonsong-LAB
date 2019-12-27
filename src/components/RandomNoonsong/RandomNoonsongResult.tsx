@@ -117,8 +117,8 @@ const Info = styled.div<IColorProps>`
 
 const DownloadButton = styled.button`
   appearance: none;
-  background-color: ${({ theme }) => theme.primaryGray};
-  color: ${({ theme }) => theme.primaryWhite};
+  background-color: ${({ theme }) => theme.nsLabGray};
+  color: ${({ theme }) => theme.nsLabWhite};
   cursor: pointer;
   border: 0;
   border-radius: .25rem;

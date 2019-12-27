@@ -81,7 +81,7 @@ interface IColorProps {
 }
 
 const PictureContainer = styled.div`
-  background: ${({ theme }) => theme.primaryWhite};
+  background: ${({ theme }) => theme.nsLabWhite};
   display: flex;
   flex-direction: column;
   align-items: center;

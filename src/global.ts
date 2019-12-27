@@ -10,8 +10,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background: ${({ theme }) => theme.primaryWhite};
-    color: ${({ theme }) => theme.primaryBlack};
+    background: ${({ theme }) => theme.nsLabWhite};
+    color: ${({ theme }) => theme.nsLabBlack};
     font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     height: 100%;
     text-rendering: optimizeLegibility;

@@ -8,8 +8,8 @@ export default function Intro() {
         <h2>Random Noonsong</h2>
         <h3>나만의 눈송이</h3>
       </Title>
-      <Description>나만의 닉네임을 입력하고 이모티콘을 한 개 골라보세요</Description>
-      <Description>닉네임은 최대 10글자까지 적을 수 있어요</Description>
+      <Description>닉네임을 입력하고 본인을 표현할 수 있는 이모티콘을 골라보세요 😌</Description>
+      <Description>닉네임은 최대 10글자, 닉네임에 따라 눈송이의 색깔이 바뀐답니다!</Description>
     </Container>
   )
 }
@@ -50,7 +50,7 @@ const Title = styled.div`
 const Description = styled.div`
   font-size: 1.225rem;
   font-weight: 500;
-  margin: .05rem 0 0 0;
+  margin: .25rem 0 0 0;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     font-size: 13px;

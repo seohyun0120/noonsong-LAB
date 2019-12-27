@@ -1,12 +1,9 @@
 import baseStyled, { ThemedStyledInterface } from 'styled-components'
 
 export const theme = {
-  primaryWhite: '#FFFFFF',
-  primaryBlack: '#000000',
-  primaryOrange: '#fd7e14',
-  primaryBlue: '#74c0fc',
-  primaryGreen: '#40c057',
-  primaryGray: '#343a40',
+  nsLabWhite: '#FFFFFF',
+  nsLabBlack: '#000000',
+  nsLabGray: '#343a40',
   nsLabGold: '#D8B17E',
   nsLabBlue: '#1F3263',
   mobile: '576px'
