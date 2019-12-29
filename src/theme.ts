@@ -7,7 +7,7 @@ export const theme = {
   nsLabGold: '#84754e',
   nsLabBlue: '#003087',
   nsLabSkyBlue: '#0072ce',
-  mobile: '576px'
+  mobile: '980px'
 }
 
 export type Theme = typeof theme;
