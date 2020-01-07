@@ -10,6 +10,7 @@ import Burger from './components/Burger'
 import Menu from './components/Menu'
 import LandingPage from './components/LandingPage'
 import ErrorPage from './components/ErrorPage'
+import MyNSProfile from './components/MyNSProfile/MyNSProfile'
 
 export default () => (
   <BrowserRouter>
@@ -32,6 +33,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={LandingPage} />
           <Route exact path='/random-noonsong' component={RandomNoonsong} />
+          <Route exact path='/my-noonsong-profile' component={MyNSProfile} />
           <Route exact path='/about' component={About} />
           <Route path='*' component={ErrorPage} />
         </Switch>

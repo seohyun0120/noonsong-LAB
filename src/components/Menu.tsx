@@ -39,6 +39,13 @@ export default function Menu(props: IMenuProps) {
       >
         <MenuText>나만의 눈송이</MenuText>
       </Link>
+      <Link
+        to='/my-noonsong-profile'
+        tabIndex={tabIndex}
+        onClick={() => props.setOpen(!props.open)} style={{ textDecoration: 'none', outline: 0 }}
+      >
+        <MenuText>눈송 프로필</MenuText>
+      </Link>
     </StyledMenu >
   )
 }
