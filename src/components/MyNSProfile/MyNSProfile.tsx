@@ -1,19 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
-import VV1 from '../../assets/svg/noonsong_face_happy.svg'
-import VV2 from '../../assets/svg/noonsong_face_sad.svg'
-import VV3 from '../../assets/svg/noonsong_face_smile.svg'
-import VV4 from '../../assets/svg/noonsong_face_tired.svg'
-import VV5 from '../../assets/svg/noonsong_face_zombie.svg'
+import face from '../../assets/svg/ns_face_tired.svg'
+import cloth from '../../assets/svg/ns_cloth_hoodie_green.svg'
+import drink from '../../assets/svg/ns_drink_tejava.svg'
+import thing from '../../assets/svg/ns_things_keyboard.svg'
+import nametag from '../../assets/svg/ns_nametag.svg'
+import labTitle from '../../assets/svg/ns_lab_title.svg'
 
 export default function MyNSProfile() {
   return (
     <Container>
-      <Logo src={VV1} />
-      <Logo2 src={VV2} />
-      <Logo3 src={VV3} />
-      <Logo4 src={VV4} />
-      <Logo5 src={VV5} />
+      <BottomBackground></BottomBackground>
+      <TopBackground></TopBackground>
+      <Nametag src={nametag} />
+      <Name length={7}>{'seohyun'}</Name>
+      <NSLabTitle src={labTitle} />
+      <Cloth src={cloth} />
+      <Face src={face} />
+      <Thing src={thing} />
+      <Drink src={drink} />
     </Container>
   )
 }
@@ -22,46 +27,62 @@ interface IColorProps {
   personalColor: string
 }
 
+interface IStringProps {
+  length: number;
+}
+
 const Container = styled.div`
   display: flex;
 `
 
-const Logo = styled.img`
-  position: fixed;
-  top: 50%;
-  left: 3rem;
-  width: 300px;
-  border: 3px solid #73AD21;
+const NSLabTitle = styled.img`
+  position: absolute;
+  width: 900px;
 `
 
-const Logo2 = styled.img`
-  position: fixed;
-  top: 20%;
-  left: 5rem;
-  width: 300px;
-  border: 3px solid #73AD21;
+const BottomBackground = styled.div`
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  background: ${({ theme }) => theme.nsLabRed};
 `
 
-const Logo3 = styled.img`
-  position: fixed;
-  top: 30%;
-  left: 20rem;
-  width: 300px;
-  border: 3px solid #73AD21;
+const TopBackground = styled.div`
+  position: absolute;
+  width: 900px;
+  height: 640px;
+  background: ${({ theme }) => theme.nsLabYellow};
 `
 
-const Logo4 = styled.img`
-  position: fixed;
-  top: 10%;
-  left: 40rem;
-  width: 300px;
-  border: 3px solid #73AD21;
+const Nametag = styled.img`
+  position: absolute;
+  width: 900px;
 `
 
-const Logo5 = styled.img`
+const Name = styled.div<IStringProps>`
   position: fixed;
-  top: 25%;
-  left: 30rem;
-  width: 300px;
-  border: 3px solid #73AD21;
+  top: 870px;
+  left: ${(props) => 770 - (props.length) * 9}px;
+  font-size: 33px;
+  font-weight: 700;
+`
+
+const Face = styled.img`
+  position: absolute;
+  width: 900px;
+`
+
+const Cloth = styled.img`
+  position: absolute;
+  width: 900px;
+`
+
+const Drink = styled.img`
+  position: absolute;
+  width: 900px;
+`
+
+const Thing = styled.img`
+  position: absolute;
+  width: 900px;
 `
