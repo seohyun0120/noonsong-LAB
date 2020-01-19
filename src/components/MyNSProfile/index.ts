@@ -1,1 +1,1 @@
-export { default as default } from './MyNSProfile'
+export { default as default } from './NSProfile'
