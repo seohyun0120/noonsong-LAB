@@ -12,7 +12,6 @@ export default function About() {
         <Description>
           <span>눈송 LAB(Noonsong LAB)</span>은 숙명여자대학교 마스코트인 <span>눈송이</span>를 활용하여 만들어진 Web Application입니다. <br />
           심심한 숙대생이 남는 시간을 활용하여 직접 만들어보았습니다. <br />
-          앞으로 계속 추가될 다양한 <span>눈송이</span>테마들을 기대해주세요!
         </Description>
       </TextContainer>
       <HelpContainer>
@@ -28,12 +27,6 @@ export default function About() {
             </a>
             으로 오세요. 같이 만들어봐요!
           </h3>
-          <h2>눈송이 짤을 그려보신 적 있으신가요?</h2>
-          <h3>
-            눈송템 공구를 해보셨던 총대 학우분들, 눈송이 짤을 그려주시는 숨겨진 학우분들을 찾습니다! <br />
-            <span> sarah5734@sm.ac.kr </span>으로 이메일 보내주세요. <br />
-            눈송LAB에 다양한 눈송이들이 들어오는 것을 보고싶어요!
-          </h3>
         </HelpDescription>
       </HelpContainer>
       <ReleaseInfoContainer>
@@ -42,8 +35,8 @@ export default function About() {
         </SubTitle>
         <SubDescription>
           <h2>v1.0</h2>
-          <h3>December 29, 2019</h3>
-          <h4> 🎉 랜덤눈송이(RandomNoonsong) 출시</h4>
+          <h3>JAN 19, 2020</h3>
+          <h4> 🎉 눈송프로필(NoonsongProfile) 출시 준비중</h4>
         </SubDescription>
       </ReleaseInfoContainer>
     </Container>
@@ -52,7 +45,6 @@ export default function About() {
 
 const Container = styled.div`
   text-align: center;
-  overflow-y: scroll;
 `
 
 const TextContainer = styled.div`
