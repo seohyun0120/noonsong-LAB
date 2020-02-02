@@ -45,7 +45,7 @@
 	.st35{fill:#FFFFFF;}
 	.st36{display:inline;fill:#FA5252;stroke:#FA5252;stroke-width:5.21;}
 	.st37{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st38{fill:#66D9E8;stroke:#66D9E8;stroke-width:5.21;}
+	.st38{display:inline;fill:#66D9E8;stroke:#66D9E8;stroke-width:5.21;}
 	.st39{fill:#495057;stroke:#495057;stroke-miterlimit:10;}
 	.st40{display:inline;fill:#FFD43B;stroke:#FFD43B;stroke-width:5.21;}
 	.st41{display:inline;fill:#495057;stroke:#495057;stroke-width:5.21;}
@@ -479,8 +479,8 @@
 			h18.9v-2.7h-19v-2.3h21.8v7.2h-18.9v3h20.1v2.4H186.8z"/>
 	</g>
 </g>
-<g id="마돈나">
-	<g>
+<g id="마돈나" class="st0">
+	<g class="st13">
 		<path class="st31" d="M121,718c5.6,119.1,9.8,205.5,10,220c0,2.4,0,9.9,5,16c3.9,4.7,9.1,6.6,14,8c5.2,1.5,20.1,5.3,62,0
 			c4.1-0.5,10.5-3.8,14.5-8.5c4.1-4.8,4-15.2,4-17c-0.1-12.9,3.6-95.5,9.5-218.5"/>
 		<line class="st32" x1="122" y1="748" x2="239" y2="748"/>
@@ -488,7 +488,7 @@
 		<path class="st33" d="M105,716.8c45.9-0.6,107.1-1.2,153-1.7"/>
 	</g>
 	<path class="st38" d="M121.3,792.7l118.7-0.6l-1.5,62.2h-12.8H123.7L121.3,792.7z"/>
-	<g>
+	<g class="st13">
 		<path class="st39" d="M136.9,831.4v-20.9h15.2v20.9H136.9z M149.3,812.9h-9.5v16.2h9.5V812.9z M160.9,822.6v16.9h-2.8v-32.3h2.8
 			v13h5.3v2.4H160.9z"/>
 		<path class="st39" d="M184.1,820.2v4.3h13.3v2.3H168v-2.3h13.2v-4.3h-9.6v-11.4h22.1v2.3h-19.2v6.8H194v2.3H184.1z M171.7,838.5
@@ -955,14 +955,14 @@
 		</g>
 	</g>
 </g>
-<g id="NULL" class="st0">
-	<g class="st13">
+<g id="NULL">
+	<g>
 		<g>
 			<ellipse class="st35" cx="996.5" cy="193" rx="141.5" ry="127"/>
 		</g>
 		<polygon class="st35" points="901.5,242.5 848.9,334 996.8,287.6 		"/>
 	</g>
-	<g class="st13">
+	<g>
 		<g>
 			<path d="M903.4,217.3h2.1h3.1c1.5,0,2.6,0.2,3.2,0.6c0.6,0.4,1,1.1,1,2.1c0,1.1-0.3,1.8-0.9,2.2c-0.6,0.4-1.9,0.6-4,0.6h-10.5h-2
 				c-1,0-1.8-0.2-2.3-0.7s-0.8-1.2-0.8-2.1c0-1,0.3-1.8,0.9-2.1c0.6-0.4,1.7-0.6,3.3-0.6h0.8v-35.2h-1.1c-2.4,0-3.9-0.2-4.8-0.6
