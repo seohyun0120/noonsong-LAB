@@ -9,7 +9,7 @@ export const theme = {
   nsLabYellow: '#fcc419',
   nsLabRed: '#f55950',
   nsLabGray: '#f5f5f5',
-  mobile: '766px'
+  mobile: '767px',
 }
 
 export type Theme = typeof theme;

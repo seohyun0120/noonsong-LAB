@@ -23,10 +23,6 @@ export default function MyNSProfile() {
   )
 }
 
-interface IColorProps {
-  personalColor: string
-}
-
 interface IStringProps {
   length: number;
 }
