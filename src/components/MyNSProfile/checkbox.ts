@@ -17,6 +17,10 @@ const function2Checkbox = [
   },
   {
     id: 5,
+    name: '메르시'
+  },
+  {
+    id: 6,
     name: '스타벅스'
   }
 ]
