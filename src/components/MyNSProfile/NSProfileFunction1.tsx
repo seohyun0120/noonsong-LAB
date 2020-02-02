@@ -28,8 +28,6 @@ export default class Quesiton1 extends React.Component<IProps> {
   }
 
   render() {
-    const regexp = /^[a-zA-Z]*$/
-    console.log((this.props.values.nickname).match(regexp))
     const { values } = this.props
     return (
       <>
