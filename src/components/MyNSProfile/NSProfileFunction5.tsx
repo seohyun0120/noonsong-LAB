@@ -3,7 +3,15 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { function5Checkbox } from './checkbox'
-import { ButtonContainer, NextButton, BackButton } from './style'
+import {
+  CheckBoxLabel,
+  SelectButton,
+  Selection,
+  ButtonContainer,
+  NextButton,
+  BackButton
+} from './style'
+
 interface IProps {
   values: {
     function5: number
@@ -114,27 +122,4 @@ const Title = styled.div`
       margin: 0;
     }
   }
-`
-
-const CheckBoxLabel = styled.div`
-  font-size: 1.5rem;
-  display: block;
-  margin: 1rem 0;
-`
-
-const SelectButton = styled.div`
-  appearance: none;
-  border: 2px solid;
-  border-radius: .25rem;
-  color: red;
-  cursor: pointer;
-  font-size: 1.125rem;
-  width: 100%;
-  height: 2.5rem;
-  margin-left: 0.25em;
-  outline: none;
-`
-
-const Selection = styled.div`
-  display: block;
 `
